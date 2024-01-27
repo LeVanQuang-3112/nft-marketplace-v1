@@ -1,0 +1,62 @@
+@import "config";
+@import "fonts";
+@import "responsive";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.App {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  // color: $primary-color;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+header {
+  height: 90px;
+  background-color: $primary-color;
+}
+.container-fluid {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 15px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 15px;
+}
+
+.ant-layout {
+  background: #fff;
+}
+.ant-layout-content {
+  background-color: #fff;
+  min-height: calc(100vh - #{$heightFooter} - #{$heightHeader}) !important;
+  overflow: auto;
+}
+.ant-layout.main-layout {
+  background-color: #fff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
